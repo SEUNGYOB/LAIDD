@@ -1,4 +1,4 @@
-# Proteogenomic Pipeline (MATLAB) — Steps 0–8
+# Proteogenomic Pipeline (MATLAB) — Steps (0–8)
 
 재현 가능한 유전체–전사체–단백체–인산화단백체 통합 분석을 위한 MATLAB 파이프라인입니다.  
 본 저장소는 0–8단계 스크립트와 보조 함수, 그리고 예시 데이터 스키마를 포함합니다.
