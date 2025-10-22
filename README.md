@@ -51,28 +51,29 @@
 
 ## 4. 실행 순서
 
-각 단계는 독립적으로 실행 가능하며, 0단계부터 순차적으로 수행하는 것을 권장합니다.
+각 단계는 독립적으로 실행 가능하며, 0단계부터 순차적으로 수행하는 것을 권장합니다.  
+아래 예시는 모든 `.m` 파일이 `code/` 폴더 안에 있는 경우를 기준으로 합니다.
 
 ```matlab
-% 0. 정규화
-run('code/00_data_normalization.m')
+% 0. 데이터 정규화
+run('code/00_Data_normalization.m')
 
-% 1. 변이–인산화 연관
-run('code/01_mut_phospho_correlation.m')
+% 1. 변이–인산화 연관 분석
+run('code/01_Mutation-phosphorylation_correlation.m')
 
-% 2. 변이–단백질/인산화 연관
-run('code/02_mut_assoc_protein_phospho.m')
+% 2. 변이–단백질 및 인산화단백질 연관 분석
+run('code/02_Mutation-protein_and_phosphopeptide_association.m')
 
-% 3. mRNA–단백질 상관
-run('code/03_mrna_protein_correlation.m')
+% 3. mRNA–단백질 상관 분석
+run('code/03_mRNA-protein_correlation.m')
 
-% 4–6. 아형 규명 (mRNA → Protein → Phospho)
-run('code/04_subtype_mrna.m')
-run('code/05_subtype_protein.m')
-run('code/06_subtype_phospho.m')
+% 4–6. 아형(Subtype) 규명 단계
+run('code/04_Subtype_identification_mRNA.m')
+run('code/05_Subtype_identification_protein.m')
+run('code/06_Subtype_identification_phospho.m')
 
 % 7. 통합 클러스터링
-run('code/07_integrated_clustering.m')
+run('code/07_Integrated_clustering.m')
 
 % 8. 외부 코호트에 mRNA 시그니처 적용
-run('code/08_apply_mrna_signatures.m')
+run('code/08_Application_of_mRNA_signatures.m')
