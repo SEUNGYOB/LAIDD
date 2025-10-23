@@ -80,7 +80,7 @@
   - Statistics and Machine Learning Toolbox  
   - Bioinformatics Toolbox (선택)  
 - OS: Windows / macOS / Linux  
-- 권장: `rng(2025);` 로 random seed 고정
+- 권장: random seed 고정
 
 ---
 
